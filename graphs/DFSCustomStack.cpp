@@ -11,10 +11,10 @@ private:
     stack<int> Stack;
 
 public:
-    Graph(int vertex)
+    Graph(int vertex_size)
     {
-        this->vertex_no = vertex;
-        adjacent = new vector<int>[vertex];
+        this->vertex_no = vertex_size;
+        adjacent = new vector<int>[vertex_size];
     }
 
     void addEdge(int vertex_one, int vertex_two)
@@ -50,7 +50,9 @@ public:
 
 int main()
 {
-    Graph graph(0);
+    /*  2020 Feb 26 Wed  18:57:48 - Arjun Adhikari
+    Total no. of vertices in graph. */    
+    Graph graph(5);
 
     bool visited[5] = {false};
 
